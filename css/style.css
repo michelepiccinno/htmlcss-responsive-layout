@@ -1,0 +1,38 @@
+:root {
+  --bckg-header-color: #0084fd;
+  --my-gap: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  pad: 0;
+}
+
+header {
+  background-color: var(--bckg-header-color);
+}
+
+.container {
+  width: 100%;
+  min-width: 380px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--my-gap);
+}
+
+.center-and-space-btw {
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
