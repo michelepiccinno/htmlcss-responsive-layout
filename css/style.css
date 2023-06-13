@@ -19,6 +19,7 @@ header {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  border: 1px dashed green;
 }
 
 section {
