@@ -6,7 +6,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  pad: 0;
+  padding: 0;
 }
 
 header {
@@ -21,10 +21,20 @@ header {
   padding-right: 1rem;
 }
 
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column; /*VERRA' POI SOVRASCRITTA DA MEDIAQUERY TABLET E DESKTOP*/
   gap: var(--my-gap);
+}
+
+.flex-dir-row {  /*NECESSARIA IN QUANTO LA CLASSE ROW (SOPRA) CONDIVISA E' IN COLUMN*/
+  flex-direction: row;
 }
 
 .center-and-space-btw {
@@ -32,7 +42,13 @@ header {
   align-items: center;
 }
 
-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
+  border: 1px solid red;  
+  padding: 1rem;
+}
+
+.col100 {          /* DA VERIFICARE L'UTILITA' DI QUESTA CLASSE*/
+  flex-basis: 100%;
 }
