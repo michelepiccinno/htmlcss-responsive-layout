@@ -24,7 +24,6 @@ header {
 
 .container {
   width: 100%;
-
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -71,6 +70,11 @@ h4 {
 button {
   margin-top: 1rem;
 }
+
+.telefono {
+  width: 250px;  
+  aspect-ratio: 1/1;
+}
 /*****CLASSI UTILIITIES*********************/
 .backgr-first-color {
   background-color: var(--first-color);
@@ -93,6 +97,10 @@ button {
 }
 
 .txt-first-color {
+  color: var(--first-color);
+}
+
+.txt-fifth-color {
   color: var(--fifth-color);
 }
 
@@ -119,6 +127,16 @@ button {
 .font-size-first {
   font-size: 1.5rem;
 }
+
+.font-size-second {
+  font-size: 5rem;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+
 /****************MEDIA QUERY*********************/
 
 /* medium */
