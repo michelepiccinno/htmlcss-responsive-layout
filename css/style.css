@@ -42,6 +42,14 @@ header {
   background-color: var(--fifth-color);
 }
 
+.bord-radius-md {
+  border-radius: 30px;
+}
+
+.bord-radius-sm {
+  border-radius: 15px;
+}
+
 .container {
   width: 100%;
   
