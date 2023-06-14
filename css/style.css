@@ -22,8 +22,15 @@ header {
   padding: 1rem 0 1rem;
 }
 
+.nav-bar {
+  display: none;
+  width: 400px;
+  justify-content: space-between;
+  color: var(--fifth-color);
+}
+
 .container {
-  width: 100%;
+  width: 375px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -68,12 +75,21 @@ h4 {
 }
 
 button {
+  letter-spacing: .3rem;
+  border: none;
+  border-radius: 15px;;
   margin-top: 1rem;
 }
 
-.telefono {
-  width: 250px;  
-  aspect-ratio: 1/1;
+.section-1 .container-img-phone {
+  display: flex;
+  align-items: flex-end;
+}
+
+.section-1 .container-img-phone .img-phone {
+  width: 100%;
+  max-width: 350px;
+  object-fit: contain;
 }
 /*****CLASSI UTILIITIES*********************/
 .backgr-first-color {
@@ -116,6 +132,10 @@ button {
   padding-top: 0;
 }
 
+.padd-0 {
+  padding: 0;
+}
+
 .padd-bot-first {
   padding-bottom: 1rem;
 }
@@ -141,6 +161,10 @@ button {
 
 /* medium */
 @media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
   .col-full-width-medium {
     flex-basis: 100%;
   }
@@ -150,21 +174,21 @@ button {
   }
 
   .col-2-3-medium {
-    flex-basis: calc(((100% / 3) - var(--my-gap)) * 2);
+    flex-basis: calc( ((100% / 3) - var(--my-gap))  * 2);
   }
 
   .col-1-2-medium {
-    flex-basis: calc((100% - var(--my-gap)) / 2);
+    flex-basis: calc((100% / 2) - var(--my-gap));
   }
 
   .container-md-medium {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .container-sm-medium {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -179,26 +203,35 @@ button {
   }
 
   .col-2-3-large {
-    flex-basis: calc(((100% / 3) - var(--my-gap)) * 2);
+    flex-basis: calc( ((100% / 3) - var(--my-gap))  * 2);
   }
 
   .col-1-2-large {
-    flex-basis: calc((100% - var(--my-gap)) / 2);
+    flex-basis: calc((100% / 2) - var(--my-gap));
   }
 
+  /*IN DESKTOP SOVRASCRIVE IL PADDING LEFT E RIGHT DI TUTTA LA STRUTTURA*/
   .container {
-    /*IN DESKTOP SOVRASCRIVE IL PADDING LEFT E RIGHT DI TUTTA LA STRUTTURA*/
-    padding-left: 20%;
-    padding-right: 20%;
+    width: 900px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .container-xs-large {
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .container-xxs-large {
-    padding-left: 18rem;
-    padding-right: 18rem;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .nav-bar{
+    display: flex;
   }
 }
