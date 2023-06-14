@@ -1,6 +1,11 @@
 :root {
-  --bckg-header-color: #0084fd;
+  --first-color: #0084fd;
+  --second-color: #9994e7;
+  --third-color: #b5ddff;
+  --fourth-color: #333333;
+  --fifth-color: white;
   --my-gap: 1rem;
+  --my-font-family: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -9,13 +14,37 @@
   padding: 0;
 }
 
+body {
+  font-family: var(--my-font-family);
+}
+
 header {
-  background-color: var(--bckg-header-color);
+  padding: 1rem 0 1rem;
+}
+
+.backgr-first-color {
+  background-color: var(--first-color);
+}
+
+.backgr-second-color {
+  background-color: var(--second-color);
+}
+
+.backgr-third-color {
+  background-color: var(--third-color);
+}
+
+.backgr-fourth-color {
+  background-color: var(--fourth-color);
+}
+
+.backgr-fifth-color {
+  background-color: var(--fifth-color);
 }
 
 .container {
   width: 100%;
-  min-width: 380px;
+  
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -30,11 +59,10 @@ section {
 .row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; /*VERRA' POI SOVRASCRITTA DA MEDIAQUERY TABLET E DESKTOP*/
   gap: var(--my-gap);
 }
 
-.flex-dir-row {  /*NECESSARIA IN QUANTO LA CLASSE ROW (SOPRA) CONDIVISA E' IN COLUMN*/
+header .flex-dir-row {  /*NECESSARIA PER LA NAV IN QUANTO LA CLASSE ROW (SOPRA) CONDIVISA E' IN COLUMN*/
   flex-direction: row;
 }
 
@@ -45,11 +73,76 @@ section {
 
 .col {
   flex-grow: 1;
-  flex-basis: 0;
+  flex-basis: 100%;
   border: 1px solid red;  
   padding: 1rem;
 }
 
-.col100 {          /* DA VERIFICARE L'UTILITA' DI QUESTA CLASSE*/
-  flex-basis: 100%;
+/****************MEDIA QUERY*********************/
+
+/* medium */
+@media screen and (min-width: 768px) {
+  .col-full-width-medium {
+    flex-basis: 100%;
+  }
+
+  .col-1-3-medium {
+    flex-basis: calc((100% / 3) - var(--my-gap));
+  }
+  
+  .col-2-3-medium {
+    flex-basis: calc(((100% / 3) - var(--my-gap)) * 2);
+  }
+  
+  .col-1-2-medium {
+    flex-basis: calc((100% - var(--my-gap)) / 2);
+  }
+
+  .container-md-medium {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .container-sm-medium {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }
+
+/* large */
+@media screen and (min-width: 920px) {
+  .col-full-width-large {
+    flex-basis: 100%;
+  }
+
+  .col-1-3-large {
+    flex-basis: calc((100% / 3) - var(--my-gap));
+  }
+  
+  .col-2-3-large {
+    flex-basis: calc(((100% / 3) - var(--my-gap)) * 2);
+  }
+  
+  .col-1-2-large {
+    flex-basis: calc((100% - var(--my-gap)) / 2);
+  }
+
+  .container{             /*IN DESKTOP SOVRASCRIVE IL PADDING LEFT E RIGHT DI TUTTA LA STRUTTURA*/
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .container-xs-large {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .container-xxs-large {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+}
+
+
+
+
