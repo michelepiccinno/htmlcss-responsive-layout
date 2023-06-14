@@ -24,7 +24,7 @@ header {
 
 .container {
   width: 100%;
-  
+
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -50,7 +50,6 @@ section {
 .col {
   flex-grow: 1;
   flex-basis: 100%;
-  border: 1px solid red;  
   padding: 1rem;
 }
 
@@ -58,9 +57,19 @@ section {
   color: var(--first-color);
 }
 
-.section-1 img {
-  width: 100%;
-  object-fit: contain;
+h4 {
+  padding: 2rem 0 2rem;
+}
+
+.photo-testimonial {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+button {
+  margin-top: 1rem;
 }
 /*****CLASSI UTILIITIES*********************/
 .backgr-first-color {
@@ -83,6 +92,10 @@ section {
   background-color: var(--fifth-color);
 }
 
+.txt-first-color {
+  color: var(--fifth-color);
+}
+
 .bord-radius-md {
   border-radius: 30px;
 }
@@ -91,7 +104,21 @@ section {
   border-radius: 15px;
 }
 
+.padd-top-0 {
+  padding-top: 0;
+}
 
+.padd-bot-first {
+  padding-bottom: 1rem;
+}
+
+.padd-top-first {
+  padding-top: 1rem;
+}
+
+.font-size-first {
+  font-size: 1.5rem;
+}
 /****************MEDIA QUERY*********************/
 
 /* medium */
@@ -103,11 +130,11 @@ section {
   .col-1-3-medium {
     flex-basis: calc((100% / 3) - var(--my-gap));
   }
-  
+
   .col-2-3-medium {
     flex-basis: calc(((100% / 3) - var(--my-gap)) * 2);
   }
-  
+
   .col-1-2-medium {
     flex-basis: calc((100% - var(--my-gap)) / 2);
   }
@@ -132,16 +159,17 @@ section {
   .col-1-3-large {
     flex-basis: calc((100% / 3) - var(--my-gap));
   }
-  
+
   .col-2-3-large {
     flex-basis: calc(((100% / 3) - var(--my-gap)) * 2);
   }
-  
+
   .col-1-2-large {
     flex-basis: calc((100% - var(--my-gap)) / 2);
   }
 
-  .container{             /*IN DESKTOP SOVRASCRIVE IL PADDING LEFT E RIGHT DI TUTTA LA STRUTTURA*/
+  .container {
+    /*IN DESKTOP SOVRASCRIVE IL PADDING LEFT E RIGHT DI TUTTA LA STRUTTURA*/
     padding-left: 20%;
     padding-right: 20%;
   }
@@ -156,7 +184,3 @@ section {
     padding-right: 18rem;
   }
 }
-
-
-
-
