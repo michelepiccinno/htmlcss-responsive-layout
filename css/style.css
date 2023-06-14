@@ -22,6 +22,47 @@ header {
   padding: 1rem 0 1rem;
 }
 
+.container {
+  width: 100%;
+  
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px dashed green;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--my-gap);
+}
+
+.center-and-space-btw {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 100%;
+  border: 1px solid red;  
+  padding: 1rem;
+}
+
+.section-1 h4 {
+  color: var(--first-color);
+}
+
+.section-1 img {
+  width: 100%;
+  object-fit: contain;
+}
+/*****CLASSI UTILIITIES*********************/
 .backgr-first-color {
   background-color: var(--first-color);
 }
@@ -50,41 +91,6 @@ header {
   border-radius: 15px;
 }
 
-.container {
-  width: 100%;
-  
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border: 1px dashed green;
-}
-
-section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--my-gap);
-}
-
-header .flex-dir-row {  /*NECESSARIA PER LA NAV IN QUANTO LA CLASSE ROW (SOPRA) CONDIVISA E' IN COLUMN*/
-  flex-direction: row;
-}
-
-.center-and-space-btw {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.col {
-  flex-grow: 1;
-  flex-basis: 100%;
-  border: 1px solid red;  
-  padding: 1rem;
-}
 
 /****************MEDIA QUERY*********************/
 
