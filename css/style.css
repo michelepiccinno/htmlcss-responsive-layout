@@ -4,6 +4,7 @@
   --third-color: #b5ddff;
   --fourth-color: #333333;
   --fifth-color: white;
+  --sixth-color: black;
   --my-gap: 1rem;
   --my-font-family: Arial, Helvetica, sans-serif;
 }
@@ -25,8 +26,16 @@ header {
 .nav-bar {
   display: none;
   width: 400px;
-  justify-content: space-between;
+  font-size: .8rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
   color: var(--fifth-color);
+}
+
+.nav-bar .btn-get-started a {
+  color: var(--sixth-color);
 }
 
 .container {
@@ -34,7 +43,6 @@ header {
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  border: 1px dashed green;
 }
 
 section {
@@ -90,6 +98,11 @@ button {
   width: 100%;
   max-width: 350px;
   object-fit: contain;
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
 }
 /*****CLASSI UTILIITIES*********************/
 .backgr-first-color {
