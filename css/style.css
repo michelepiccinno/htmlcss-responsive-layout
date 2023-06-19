@@ -104,7 +104,7 @@ button {
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
 }
-/*****CLASSI UTILIITIES*********************/
+/*****CLASSI UTILITIES*********************/
 .backgr-first-color {
   background-color: var(--first-color);
 }
@@ -169,13 +169,16 @@ button {
   text-align: center;
 }
 
+.marg-bottom-neg-16px {
+  margin-bottom: -16px;
+}
 
 /****************MEDIA QUERY*********************/
 
 /* medium */
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    max-width: 100%;
   }
 
   .col-full-width-medium {
@@ -203,6 +206,10 @@ button {
     padding-left: 80px;
     padding-right: 80px;
   }
+
+  .marg-bottom-neg-49px-medium {
+    margin-bottom: -49px;
+  }
 }
 
 /* large */
@@ -225,7 +232,8 @@ button {
 
   /*IN DESKTOP SOVRASCRIVE IL PADDING LEFT E RIGHT DI TUTTA LA STRUTTURA*/
   .container {
-    max-width: 900px;
+    width: 100%;
+    max-width: 920px;
     padding-left: 50px;
     padding-right: 50px;
   }
