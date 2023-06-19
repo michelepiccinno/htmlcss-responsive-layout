@@ -39,7 +39,7 @@ header {
 }
 
 .container {
-  width: 375px;
+  min-width: 200px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -175,7 +175,7 @@ button {
 /* medium */
 @media screen and (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 100%;
   }
 
   .col-full-width-medium {
@@ -225,7 +225,7 @@ button {
 
   /*IN DESKTOP SOVRASCRIVE IL PADDING LEFT E RIGHT DI TUTTA LA STRUTTURA*/
   .container {
-    width: 900px;
+    max-width: 900px;
     padding-left: 50px;
     padding-right: 50px;
   }
